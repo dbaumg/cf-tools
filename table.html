@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeforces Verdicts</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="input-container">
+        <label for="handle">Enter Codeforces Handle:</label>
+        <input type="text" id="handle">
+        <button onclick="fetchVerdicts()">Fetch Verdicts</button>
+
+        <label for="contestFilter">Contest Filter:</label>
+        <select id="contestFilter" onchange="fetchVerdicts()">
+            <option value="all">All</option>
+            <option value="div1">Div. 1</option>
+            <option value="div2">Div. 2</option>
+            <option value="div3">Div. 3</option>
+            <option value="div4">Div. 4</option>
+            <option value="div1+2">Div. 1 + 2</option>
+            <option value="educational">Educational</option>
+            <option value="global">Global</option>
+        </select>
+
+        <label for="colorToggle">Color Scheme:</label>
+        <select id="colorToggle" onchange="toggleColorScheme()">
+            <option value="colorful">Colorful (rating-based)</option>
+            <option value="greenRed">Green/Red (verdict-based)</option>
+        </select>
+    </div>
+
+    <table id="verdictsTable">
+        <thead>
+            <tr>
+                <th>Round</th>
+            </tr>
+        </thead>
+        <tbody id="verdictsBody">
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+/* Default Styles */
+
+/* Input Container Styling */
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+/* Label Styling */
+.input-container label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Input Field Styling */
+#handle {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Dropdown (Select) Styling */
+select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Table Styling (Unchanged) */
+#verdictsTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#verdictsTable th, #verdictsTable td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+#verdictsTable th {
+    background-color: #f2f2f2;
+}
