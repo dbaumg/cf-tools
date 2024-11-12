@@ -146,7 +146,7 @@ async function fetchContests() {
     if (data.status === 'OK') {
         data.result.forEach(contest => {
             const name = contest.name;
-            if (!name.match(/Teams Preferred|NERC|School Team Contest|Preferably Teams|teams allowed|Testing Round|Unknown Language Round|April Fools/i)) {
+            if (!name.match(/Teams Preferred|NERC|School Team Contest|Preferably Teams|teams allowed|Testing Round|Unknown Language Round|April Fools|Kotlin/i)) {
                     contests[contest.id] = {
                     name: name
                 };
