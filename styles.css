@@ -1,5 +1,3 @@
-/* Default Styles */
-
 /* Input Container Styling */
 .input-container {
     display: flex;
@@ -7,6 +5,18 @@
     gap: 15px;
     margin-bottom: 20px;
     align-items: center;
+    position: -webkit-sticky;  /* For Safari */
+    position: sticky;
+    top: 0;  /* Sticks to the top */
+    background-color: white;  /* To prevent background from being transparent */
+    z-index: 100;  /* Ensure it stays above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Optional: adds a subtle shadow for better visibility */
+    padding: 10px 0;  /* Optional: padding for better spacing */
+}
+
+/* Add a little space when content underneath starts scrolling */
+body {
+    padding-top: 50px; /* Adjust this depending on the height of your sticky header */
 }
 
 /* Label Styling */
