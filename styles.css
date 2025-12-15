@@ -17,6 +17,7 @@
 /* Add a little space when content underneath starts scrolling */
 body {
     padding-top: 50px; /* Adjust this depending on the height of your sticky header */
+    font-family: Verdana, Geneva, sans-serif;
 }
 
 /* Label Styling */
@@ -72,3 +73,4 @@ button:hover {
 #verdictsTable th {
     background-color: #f2f2f2;
 }
+
