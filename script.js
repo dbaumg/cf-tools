@@ -84,7 +84,7 @@ async function fetchVerdicts() {
                 const problemCell = document.createElement('td');
                 const problemSubmissions = roundSubmissions[problemLetter] || []; // Check if submissions exist for the problem
                 const verdict = getBestVerdictSymbol(problemSubmissions);
-                problemCell.textContent = `${problemLetter} ${verdict}`; // Include problem letter and verdict symbol
+                problemCell.textContent = `${problemLetter}`; // Include problem letter and verdict symbol
                 
                 if (colorScheme === 'colorful' && verdict === '✔') {
                     const rating = getProblemRating(round, problemLetter);
